@@ -1,0 +1,45 @@
+RetailPro — Análisis de ventas con SQL
+
+Objetivo
+
+Proyecto de práctica orientado a organizar y analizar las ventas de una tienda de tecnología. Permite consultar información de clientes, productos, categorías y operaciones comerciales.
+
+Modelo de datos
+
+categorias: clasificación de los productos.
+
+clientes: datos básicos de compradores.
+
+productos: catálogo, precio de referencia y stock.
+
+ventas: operaciones con fecha, cantidad y precio unitario registrado al momento de vender.
+
+Relaciones principales:
+
+productos.id_categoria → categorias.id_categoria
+
+ventas.id_cliente → clientes.id_cliente
+
+ventas.id_producto → productos.id_producto
+
+Herramientas y compatibilidad
+
+GitHub para el control de versiones y la publicación de entregas.
+
+Un motor y editor SQL compatibles con la sintaxis de cada script.
+
+Importante: el script de creación y carga se ha descrito como SQL Server (T-SQL). Antes de ejecutarlo en MySQL Workbench u otro motor, comprobar su sintaxis y adaptarlo si corresponde. No se debe asumir compatibilidad entre motores.
+
+Cómo ejecutar el proyecto
+
+Clonar o descargar el repositorio.
+Abrir los archivos SQL de la carpeta RetailPro y revisar sus nombres y su orden de ejecución.
+Configurar una conexión al motor SQL compatible con el script de creación.
+Ejecutar primero el script de creación y carga de la base Ventas_Tech_DB en un entorno de prueba.
+Comprobar que las tablas y registros de prueba se cargaron correctamente. Como referencia de la documentación del proyecto: 4 categorías, 5 clientes, 6 productos y 10 ventas; validar estos valores contra el script efectivamente usado.
+Ejecutar las consultas de los módulos siguientes, comprobando que sus nombres de tablas y columnas coincidan con el esquema instalado.
+Contrastar las cifras obtenidas con los registros originales antes de interpretar resultados comerciales.
+
+Consultas y análisis
+
+El proyecto contempla consultas de resumen mensual de ventas, ranking de productos y cruces entre tablas mediante JOIN.
